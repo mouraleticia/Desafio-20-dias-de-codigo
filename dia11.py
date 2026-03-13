@@ -1,7 +1,5 @@
-R= float(input())
+codigo_1, quantidade_1, valor_1 = map(float, input().split())
+codigo_2, quantidade_2, valor_2 = map(float, input().split())
 
-pi = 3.14159
-
-volume =(4/3) * pi * (R*R*R)
-
-print(f'VOLUME = {volume:.3f}')
+resultado = (quantidade_1*valor_1)+(quantidade_2*valor_2)
+print("VALOR A PAGAR: R$ %.2f" %round(resultado, 2))
